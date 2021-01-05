@@ -19,3 +19,6 @@ const Route = use('Route')
 Route.on('/').render('welcome')
 Route.get('books/', 'BookController.index')
 Route.get('books/:book_id', 'BookController.show').as('show_book')
+
+Route.get('authors/','AuthorController.list')
+Route.get('authors/:author_id','AuthorController.display').as('display_author')
