@@ -157,3 +157,10 @@ the steps below:
 
 Command Line
 npm install sqlite3
+adonis serve --dev
+adonis migration:run
+sqlite3 adonis.sqlite
+sqlite> INSERT INTO authors (first_name, last_name, dob) 
+   ...> VALUES (Tom, Jones, 02/02/1988)
+   ...> ;
+sqlite> select * from authors
