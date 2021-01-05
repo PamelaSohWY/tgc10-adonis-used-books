@@ -9,15 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>
-     @section('title')
-     @endsection
-    </title>
+    <title>Hello, world!</title>
   </head>
   <body>
     <div class="container">
-        @section("content")
-        @endsection
+        <h1>{{author.first_name}} {{author.last_name}}</h1>
+        <p>Born: {{author.dob}}</p>
     </div>
 
     <!-- Optional JavaScript -->

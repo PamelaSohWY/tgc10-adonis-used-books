@@ -154,3 +154,6 @@ the steps below:
    * Create a route to to the new function. Make sure to include the `sighting_id`
    * Update the sighting with the new information (https://adonisjs.com/docs/4.1/lucid#_inserts_updates)
    * Redirect the user back to the `/sightings/` url (see: https://adonisjs.com/docs/4.1/response#_redirects)
+
+Command Line
+npm install sqlite3
